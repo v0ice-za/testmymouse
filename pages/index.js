@@ -1,5 +1,6 @@
 import React from "react";
-import LeftClick from "../components/LeftClick";
+
+import Home from "../components/Home";
 
 const difficulties = {
   easy: {
@@ -27,7 +28,7 @@ const difficulties = {
 function App() {
   return (
     <>
-      <LeftClick difficulties={difficulties} />
+      <Home/>
     </>
   );
 }
