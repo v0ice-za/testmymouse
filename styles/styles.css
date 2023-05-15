@@ -10,7 +10,7 @@
 /*   SPLASH SCREEN STYLES   */
 html {
   padding: 0 5em 0 5em;
-  background: #373535;  /* fallback for old browsers *//* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #282c34;  /* fallback for old browsers *//* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   height: 100%;
   overflow-y: hidden;
   overflow-x: hidden;

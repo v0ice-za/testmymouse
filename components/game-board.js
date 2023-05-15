@@ -1,5 +1,5 @@
 import React, {useEffect, useRef} from 'react';
-
+//No idea how to actually finish this...
 const GameBoard = () => {
     const canvasRef = useRef(null);
 

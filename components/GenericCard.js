@@ -4,12 +4,14 @@ import Grid from "@mui/material/Grid";
 import {styled} from "@mui/material";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
+import Link from 'next/link';
 
-const GenericCard = ({headerTitle, extraStrings, footerTitle, image, cardStyle}) => {
+const GenericCard = ({headerTitle, extraStrings, footerTitle, image, cardStyle, link, onClick}) => {
 
     return (
         <>
-            <Card className={cardStyle}>
+        <Link href={link}>
+            <Card className={cardStyle} onClick={onClick}>
                 <Grid container direction={'column'} alignItems={'center'} spacing={5}>
                     <Grid item alignSelf={'center'}>
                         {image}
@@ -31,6 +33,7 @@ const GenericCard = ({headerTitle, extraStrings, footerTitle, image, cardStyle})
                     </Grid>
                 </Grid>
             </Card>
+            </Link>
         </>
     );
 };

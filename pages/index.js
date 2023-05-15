@@ -1,6 +1,6 @@
 import React from "react";
+import SplashScreen from "../components/SplashScreen";
 
-import Home from "../components/Home";
 
 const difficulties = {
   easy: {
@@ -28,7 +28,7 @@ const difficulties = {
 function App() {
   return (
     <>
-      <Home/>
+      <SplashScreen/>
     </>
   );
 }
