@@ -14,29 +14,6 @@ import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
 
 const LeftClick = () => {
-
-    const [y, setY] = useState(0);
-    const [x, setX] = useState(0);
-    const [dummyX, setDummyX] = useState(0);
-    const [dummyY, setDummyY] = useState(0);
-    const [count, setCount] = useState(5);
-    const [started, setStarted] = useState(false);
-    const [open, setOpen] = useState(true);
-    const [option, setOption] = useState(JSON.stringify(difficulties.easy));
-    const [spawn, setSpawn] = useState(false);
-    const [end, setEnd] = useState('');
-    
-
-    const dummies = [
-        {
-            variant: 'indeterminate',
-            className: 'color_change_animation',
-            sx: {},
-            size: 220,
-            onClick: () => {},
-        },
-    ]
-
     const difficulties = {
         easy: {
           size: 150,
@@ -59,6 +36,29 @@ const LeftClick = () => {
           misClicks: 0,
         },
       };
+    const [y, setY] = useState(0);
+    const [x, setX] = useState(0);
+    const [dummyX, setDummyX] = useState(0);
+    const [dummyY, setDummyY] = useState(0);
+    const [count, setCount] = useState(5);
+    const [started, setStarted] = useState(false);
+    const [open, setOpen] = useState(true);
+    const [option, setOption] = useState(JSON.stringify(difficulties.easy));
+    const [spawn, setSpawn] = useState(false);
+    const [end, setEnd] = useState('');
+    
+
+    const dummies = [
+        {
+            variant: 'indeterminate',
+            className: 'color_change_animation',
+            sx: {},
+            size: 220,
+            onClick: () => {},
+        },
+    ]
+
+    
 
     const doSomething = () => {
         setStarted(true);

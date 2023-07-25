@@ -1,5 +1,26 @@
 import React, {useState} from 'react';
-
+const difficulties = {
+    easy: {
+      size: 150,
+      speed: 1500,
+      misClicks: 9,
+    },
+    medium: {
+      size: 100,
+      speed: 1500,
+      misClicks: 4,
+    },
+    hard: {
+      size: 50,
+      speed: 1500,
+      misClicks: 4,
+    },
+    legendary: {
+      size: 25,
+      speed: 1500,
+      misClicks: 0,
+    },
+  };
 const GameContainer = () => {
     const [gameMode, setGameMode] = useState({leftClick: false, rightClick: false, middleClick: false, scroll: false});
     const [y, setY] = useState(0);
@@ -9,7 +30,7 @@ const GameContainer = () => {
     const [count, setCount] = useState(5);
     const [started, setStarted] = useState(false);
     const [open, setOpen] = useState(true);
-    const [option, setOption] = useState(JSON.stringify(difficulties.easy));
+    const [option, setOption] = useState(difficulties.easy);
     const [spawn, setSpawn] = useState(false);
     const [end, setEnd] = useState('');
 

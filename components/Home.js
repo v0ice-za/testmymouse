@@ -4,7 +4,7 @@ import SplashScreen from "./SplashScreen";
 const Home = () => {
     return (
         <>
-            <SplashScreen/>
+            {/* <SplashScreen/> */}
         </>
     );
 };
