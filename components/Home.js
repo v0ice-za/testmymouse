@@ -1,10 +1,18 @@
 import React from "react";
-import SplashScreen from "./SplashScreen";
+import Grid  from "@mui/material/Grid";
 
 const Home = () => {
     return (
         <>
-            {/* <SplashScreen/> */}
+            <Grid container direction='column'>
+                <Grid item>
+                    <Grid container>
+                            <Grid item>
+                                The home screen
+                            </Grid>
+                    </Grid>
+                </Grid>
+            </Grid>
         </>
     );
 };

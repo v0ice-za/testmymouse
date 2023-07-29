@@ -1,12 +1,10 @@
 import React from "react";
-import SplashScreen from "../components/SplashScreen";
-
-
+import Home from "../components/Home";
 
 function App() {
   return (
     <>
-      <SplashScreen difficulties={difficulties}/>
+      <Home/>
     </>
   );
 }
