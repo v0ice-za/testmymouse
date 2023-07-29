@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import MouseIcon from '@mui/icons-material/Mouse';
-import GenericCard from './GenericCard';
+import GenericCard from './../../components/GenericCard';
 
 const GameList = () => {
     let menuItems = [
@@ -57,7 +57,7 @@ const GameList = () => {
                                             headerTitle={item.headerTitle}
                                             extraStrings={item.extraStrings}
                                             footerTitle={item.footerTitle} 
-                                            link={item.link}/>
+                                            />
                                     </Grid>
                                 )
                             })

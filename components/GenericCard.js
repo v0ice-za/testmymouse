@@ -10,7 +10,7 @@ const GenericCard = ({headerTitle, extraStrings, footerTitle, image, cardStyle, 
 
     return (
         <>
-        <Link href={link}>
+        
             <Card className={cardStyle} onClick={onClick}>
                 <Grid container direction={'column'} alignItems={'center'} spacing={5}>
                     <Grid item alignSelf={'center'}>
@@ -33,7 +33,7 @@ const GenericCard = ({headerTitle, extraStrings, footerTitle, image, cardStyle, 
                     </Grid>
                 </Grid>
             </Card>
-            </Link>
+            
         </>
     );
 };
