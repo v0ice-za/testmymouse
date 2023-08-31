@@ -1,5 +1,17 @@
+:root {
+  --primaryDark: #282c34;
+}
+
 .App {
   text-align: center;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 .App-logo {
@@ -8,8 +20,27 @@
 }
 
 html {
+  background: var(--primaryDark);
+  height: 100%;
   overflow-y: hidden;
   overflow-x: hidden;
+}
+
+.menu_cards {
+  padding: 1em;
+  min-height: 15vw !important;
+  max-height: 15vw !important;
+  min-width: 38vw !important;
+  max-width: 38vw !important;
+  border-radius: 2em !important;
+  transform: skewX(-15deg);
+  box-shadow: 5px 5px 5px 0px rgba(255,255,255,0.75) !important;
+  transition: all 0.1s ease-in-out !important;
+}
+
+.menu_cards:hover {
+  box-shadow: 15px 15px 15px 15px rgba(255,255,255,0.3) !important;
+  transform: scale(1.05) skewX(-15deg);
 }
 
 @media (prefers-reduced-motion: no-preference) {

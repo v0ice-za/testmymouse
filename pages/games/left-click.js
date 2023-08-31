@@ -13,7 +13,29 @@ import Radio from "@mui/material/Radio";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
 
-const LeftClick = ({difficulties}) => {
+const LeftClick = () => {
+    const difficulties = {
+        easy: {
+          size: 150,
+          speed: 1500,
+          misClicks: 9,
+        },
+        medium: {
+          size: 100,
+          speed: 1500,
+          misClicks: 4,
+        },
+        hard: {
+          size: 50,
+          speed: 1500,
+          misClicks: 4,
+        },
+        legendary: {
+          size: 25,
+          speed: 1500,
+          misClicks: 0,
+        },
+      };
     const [y, setY] = useState(0);
     const [x, setX] = useState(0);
     const [dummyX, setDummyX] = useState(0);
@@ -23,7 +45,9 @@ const LeftClick = ({difficulties}) => {
     const [open, setOpen] = useState(true);
     const [option, setOption] = useState(JSON.stringify(difficulties.easy));
     const [spawn, setSpawn] = useState(false);
-    const [end, setEnd] = useState();
+    const [end, setEnd] = useState('');
+    
+
     const dummies = [
         {
             variant: 'indeterminate',
@@ -33,6 +57,8 @@ const LeftClick = ({difficulties}) => {
             onClick: () => {},
         },
     ]
+
+    
 
     const doSomething = () => {
         setStarted(true);
@@ -128,7 +154,7 @@ const LeftClick = ({difficulties}) => {
                         <Grid container justifyContent={'center'} padding={2}>
                             <Grid item xs={12}>
                                 <Typography variant={'h3'}>
-                                    Options
+                                    Select your difficulty
                                 </Typography>
                             </Grid>
                         </Grid>
