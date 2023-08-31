@@ -1,7 +1,6 @@
 import React from 'react';
 import Card from "@mui/material/Card";
 import Grid from "@mui/material/Grid";
-import {styled} from "@mui/material";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import Link from 'next/link';
@@ -10,7 +9,7 @@ const GenericCard = ({headerTitle, extraStrings, footerTitle, image, cardStyle, 
 
     return (
         <>
-        
+        <Link href={link}>
             <Card className={cardStyle} onClick={onClick}>
                 <Grid container direction={'column'} alignItems={'center'} spacing={5}>
                     <Grid item alignSelf={'center'}>
@@ -33,7 +32,7 @@ const GenericCard = ({headerTitle, extraStrings, footerTitle, image, cardStyle, 
                     </Grid>
                 </Grid>
             </Card>
-            
+        </Link>
         </>
     );
 };
